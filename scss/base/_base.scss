@@ -10,7 +10,13 @@
 body {
   color: $dark;
   text-align: center;
+
+  section:last-child{
+    margin-bottom: 5rem;
+  }
 }
+
+
 
 img {
   max-width: 100%;
