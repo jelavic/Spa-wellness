@@ -8,46 +8,45 @@
 
 
     <!-- CSS main-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- CSS Tabs-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <!-- CSS FancyBox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-
-
-    <!-- FONT link-->
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;600;700&display=swap" rel="stylesheet">
-
-
     <!-- Social Icons link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous">
 
 
-    <!-- JQ TABS-->
+    <!-- JQ -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 
 
-    <!-- FANCY BOX-->
-
 
 
     <script>
-        $(function() {
-            $("#tabs, #tabs2").tabs().addClass("ui-tabs- ui-helper-clearfix");
-            $("#tabs li, #tabs2 li").removeClass("ui-corner-top").addClass("ui-corner-left");
-        });
+         $(function() {
+            $("#card-1, #card-2, #card-3, #card-4, #card-5").tabs().addClass("ui-tabs- ui-helper-clearfix");
+            $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+        }); 
     </script>
     <script>
         $(function() {
-            $("#tabs, #tabs2, #tabs3, #tabs4, #tabs5").tabs({
+            $("#card-1, #card-2, #card-3, #card-4, #card-5").tabs({
                 collapsible: true,
                 active: false
             });
         });
     </script>
+
+    <script>
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+    </script>
+    
 
     <title>Wellness spa</title>
 
@@ -55,536 +54,553 @@
 
 <body>
 
+<!--  Nav
+         =================================== -->
+    <header class="main-header">
+       
+          <nav class="main-nav">
+            <ul class="unstyled-list nav-links">
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Our Services</a></li>
+                <li>
+                    <a href="index.html" class="nav-link">
+                    <div class="logo" ><img src="icons/mendala-logo.svg" alt="logo"></div>
+                    </a>
+                </li>
+                <li><a href="#team"class="nav-link">Our Team</a></li>
+                <li><a href="#booknow" class="nav-link">Contact Us</a></li>
+                <li>
+                    <div class="unstyled-list social-links">
+                        <a href="" class="icon-1"><i class="fab fa-twitter-square"></i></a>
+                        <a href="" class="icon-2"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="icon-3"><i class="fab fa-facebook-square"></i></a></i>
+                    </div>
+                </li>
+            </ul>
+          </nav>
+  
+          <div class="nav-toggle">
+            <div class="hamburger"></div>
+          </div>
 
-    <nav>
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
-        <ul class="mainMenu">
-            <li>
-                <a class="change" href="#about">About Us</a>
-            </li>
-            <li><a class="change" href="#services">Our services</a></li>
-            <li>
-                <a href="/index.html"><img class="logo" src="/icons/mendala-logo-intro.png" alt=""></a>
-            </li>
-            <li><a class="change" href="#team">Our team</a></li>
-            <li><a class="change" href="#spagallery">Gallery</a></li>
+      </header>
 
-            <div class="closeMenu"><i class="fa fa-times"></i></div>
-            <span class="icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-github"></i>
-            </span>
-        </ul>
-    </nav>
-    <div class="header">
-        <header class="hero">
-            <div class="vapour">
-                <span style="--i:10;"></span>
-                <span style="--i:7;"></span>
-                <span style="--i:5;"></span>
-                <span style="--i:2;"></span>
-                <span style="--i:1;"></span>
-                <span style="--i:6;"></span>
-                <span style="--i:4;"></span>
-                <span style="--i:3;"></span>
-                <span style="--i:9;"></span>
-                <span style="--i:8;"></span>
-                <span style="--i:10;"></span>
-                <span style="--i:7;"></span>
-                <span style="--i:5;"></span>
-                <span style="--i:2;"></span>
-                <span style="--i:1;"></span>
-                <span style="--i:6;"></span>
-                <span style="--i:4;"></span>
-                <span style="--i:3;"></span>
-                <span style="--i:9;"></span>
-                <span style="--i:8;"></span>
 
+    <!--  Hero area
+         =================================== -->
+        <header class="hero">   
+            <div class="hero-text col">
+                <h2>Restart. Refresh. Refocus.</h2>
+                <a href="#booknow" class="btn btn--secondary">Book Now</a>
             </div>
-            <div class="hero__content">
-
-                <h1>Restart. Refresh. Refocus.</h1>
-                <button class="btn btn-transparent">Book Now</button>
-
-            </div>
-
-            <div class="vapour">
-                <span style="--i:10;"></span>
-                <span style="--i:7;"></span>
-                <span style="--i:5;"></span>
-                <span style="--i:2;"></span>
-                <span style="--i:5;"></span>
-                <span style="--i:6;"></span>
-                <span style="--i:4;"></span>
-                <span style="--i:3;"></span>
-                <span style="--i:9;"></span>
-                <span style="--i:8;"></span>
-                <span style="--i:1;"></span>
-                <span style="--i:11;"></span>
-
-
+            <div class="container grid container--hero">
+                <div class="container--steam">
+                    <div class="steam steam-1" style="--i:1;"></div>
+                    <div class="steam steam-2" style="--i:2;"></div>
+                    <div class="steam steam-3" style="--i:3;"></div>
+                    <div class="steam steam-4" style="--i:4;"></div>
+                    <div class="steam steam-5" style="--i:5;"></div>
+                    <div class="steam steam-6" style="--i:6;"></div>
+                </div>
             </div>
         </header>
-    </div>
+    
 
-
-
-
-
-
-    <main>
-        <section class="intro">
-            <!-- <div class="logo-primary">
-                <img class="icon" src="/icons/mendala-logo-intro.png" alt="logo">
-            </div> -->
-            <h2 class="intro-icon">Sophisticated sanctuary where guests can step through spa doors and enter into a paradise</h2>
-            <!-- <img class="icon" src="/icons/mendala-logo-intro.png" alt="logo"> -->
-        </section>
-        <section class="intro-links">
-            <ul>
-                <li>
-                    <a class="icon-1" href="#services"> Our Services</a>
-                </li>
-                <li>
-                    <a class="icon-2" href="#team"> Our Team</a>
-                </li>
-                <li>
-                    <a class="icon-3" href="#spagallery"> Gallery</a>
-                </li>
-                <li>
-                    <a class="icon-4" href="#booknow"> Book Now</a>
-                </li>
-            </ul>
-
-        </section>
-        </section>
-    </main>
-    <section id="about" class="about">
-        <h1 class="section-title">About Us</h1>
-        <p>Our wellness spa is acclaimed for our focus on finding innovative ways to help guests discover their own energy.
-            <p> Energy makes the difference between living and living well; recharging our energy allows us to flow rather than fight through life and that is why energy renewal is our mission.</p>
-            <p> Spa is designed to reflect the energy of its surroundings: the desert, the mountains, the sea or the cityscape. But all of our spa treatmants have this in common, they deliver an outstanding experience.</p>
-            <p> Simply being here - away from the chaos of everyday life - relaxes our guests and starts them on their energy journey.</p>
-            <p> Our spa experiences combine authentic and effective treatments with a place for you to spend time alone or with your friends. Social spaces by the pool, relaxation with abundant energy.</p>
-            <button class="btn">Read More</button>
-    </section>
-
-
-    <section id="services" class="services">
-        <h1 class="section-title">Our Services</h1>
-
-        <div id="tabs">
-            <img class="tab-img" src="/icons/lotus-icon.png" alt="lotus">
-            <h2 class="subtitle-accent treatments">Body Treatments</h2>
-            <ul>
-                <li class="tab"><a href="#tabs-1">Slimm and sculpt</a></li>
-                <li class="tab"><a href="#tabs-2">Private Ritual</a></li>
-                <li class="tab"><a href="#tabs-3">Contouring</a></li>
-                <li class="tab"><a href="#tabs-4">Exfoliation</a></li>
-                <li class="tab"><a href="#tabs-5">Combo</a></li>
-            </ul>
-
-            <div id="tabs-1" class="services-content">
-                <h3>Body Scrub and Massage – 60 minutes</h3>
-                <h4>Customized Combinations</h4>
-                <p>An invigorating body polish with sandalwood, brown sugar, mandarin or ground coffee beans in addition to a 30-minute massage with blended essential oils.</p>
-                <button class="btn">Book Now</button>
+<!--  Intro
+         =================================== -->
+        <section class="container grid intro-text">
+             <div class="logo-primary">
+                <img class="icon" src="/icons/logo-teal.svg" alt="logo">
+                <h2 class="intro-icon">Sophisticated sanctuary where guests can step through spa doors and enter into a paradise</h2>
+                <img class="icon" src="/icons/mendala-logo.svg" alt="logo">
             </div>
-            <div id="tabs-2" class="services-content">
-                <h3>Essential Sculpting Body Care – 90 minutes</h3>
-                <h4>Slimming & Sculpting</h4>
-                <p>An all-in-one solution to refine the figure and smooth cellulite, with its combination of fat-burning Thermo Reducing Clay and intensive targeted massages. The success of this treatment lies in a self-heating body mask which is applied
-                    at the start of the treatment to the area between the waist and the knees followed by a real symphony of sculpting massage strokes using specific high-performance contouring products. A combination of stroking, kneading, and rolling
-                    movements is methodically employed resulting in a reduction in dress size in less than five treatments.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-3" class="services-content">
-                <h3>Sea Holistic Body Treatment & Facial – 90 minutes</h3>
-                <h4>Private Ritual</h4>
-                <p>The “Sea Holistic” treatment is an ultra relaxing treatment with its gentle warmth and fragrant scent of Lavender. A combination of light strokes, pressure, and stretching complements this very original body massage using Thai-inspired
-                    sea boluses eliminating tension knots and restoring balance to the body. The treatment also offers an exfoliation experience using sea salt crystals and a radiance boosting facial treatment restoring all the skin's natural luminosity
-                    and softness. Finish up the experience by a rich bath soak of scented salts from the Red Sea – Safaga
-                </p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-4" class="services-content">
-                <h3>Marine Body Contouring Wrap – 90 minutes</h3>
-                <h4>Nourishment From The Sea</h4>
-                <p>This treatment is based on a high-performance marine body wrap combined with a complete body massage to help eliminate toxins, break down fat or reinvigorate skin tissues. It is based on the renowned esthetical technique of heat wrapping.
-                    Gentle exfoliation using a marine sponge at the start of the treatment stimulates the epidermis. The marine wrap is then applied to the whole body and is activated gently by micron foil. A total body massage at the end of the "cocoon"
-                    treatment leaves you beautifully relaxed and rehydrated.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-5" class="services-content">
-                <h3>Hammam Energy – 60 minutes</h3>
-                <h4>Exfoliation</h4>
-                <p>Experience the ancient art of a hammam bath where you will be given a cleansing exfoliation using castile soap sloughing off your dead skin cells. This is followed by a back, neck, and shoulder massage that will be personalized with your
-                    choice of aromatherapy blends.</p>
-                <button class="btn">Book Now</button>
-            </div>
-        </div>
-        <!-- ---- end of div tabs ----- -->
-    </section>
+        </section> <!--  END of Intro -->
 
 
-    <section>
-        <div id="tabs2">
-            <img class="tab-img" src="/icons/bath-icon.png" alt="bath">
-            <h2 class="subtitle-accent treatments">Baths</h2>
-            <ul>
-                <li class="tab"><a href="#tabs-6">Hammam</a></li>
-                <li class="tab"><a href="#tabs-7">Egypt Energy</a></li>
-            </ul>
-            <div id="tabs-6" class="services-content">
-                <h3>Hammam Heaven – 120 minutes</h3>
-                <h4>Private Ritual</h4>
-                <p>Thousands of years ago, Egyptians discovered that a skillful combination of heat and water can revitalize the body and mind. Over the years, this steam bath ritual, known as hammam, has been shaped by Europeans, Ottomans, Romans, and Moroccans.
-                    Today, we proudly offer our very own version performed in a sophisticated private environment. In the warming room, you are enveloped in relaxing steam followed by skin cleansing with a traditional kese – exfoliating glove – improving
-                    circulation and removing dead cells. Finish up with a massage with the finest eucalyptus black soap and a warm rinse.</p>
-                <button class="btn">Book Now</button>
+<!--  Intro Links
+         =================================== -->
+        <section class="container col grid intro-links">
+            <div class="intro-link">
+                <a class="icon-1" href="#services">Services</a>
             </div>
-            <div id="tabs-7" class="services-content">
-                <h3>Egypt Energy – 120 minutes</h3>
-                <h4>Fit For A Queen</h4>
-                <p>Discover Cleopatra’s ancient Egyptian beauty secrets. First, you’ll be immersed in a rich bath of milk, honey, and salts from the Red Sea – Safaga, then continue with a locally developed aromatherapy oil massage designed to deepen your
-                    relaxation. Finish up the experience with a refreshing facial.</p>
-                <button class="btn">Book Now</button>
-            </div>
-        </div>
-        <!-- ---- end of div tabs ----- -->
-    </section>
-
-
-    <section>
-        <div id="tabs3">
-            <img class="tab-img" src="/icons/face-mask-icon.png" alt="mask">
-            <h2 class="subtitle-accent treatments">Facials</h2>
-            <ul>
-                <li class="tab"><a href="#tabs-8">Youth Revealing</a></li>
-                <li class="tab"><a href="#tabs-9">Just For Men</a></li>
-                <li class="tab"><a href="#tabs-10">Extended Youth</a></li>
-                <li class="tab"><a href="#tabs-11">White Lumination</a></li>
-                <li class="tab"><a href="#tabs-12">Marine Breeze</a></li>
-            </ul>
-
-            <div id="tabs-8" class="services-content">
-                <h3>Youth Revealing Pioneer Facial – 90 minutes</h3>
-                <h4>Cellular Renewal</h4>
-                <p>Face, lips, and décolleté. A facial massage with an exceptional treatment technique for instant visible results, with two professional masks and a unique resurfacing lotion. This treatment reaches the height of biotechnological performance
-                    and restores the skin's youthfulness, softness, and luminosity. A specific face massage completes the action of the products and heightens relaxation. This treatment is guaranteed to provide you with smoother, firmer, and more radiant
-                    skin.
-                </p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-9" class="services-content">
-                <h3>Skin Escape Facial - 90 minutes</h3>
-                <h4>Just For Men Experience</h4>
-                <p>Start up with a total body exfoliation using sandalwood salts from the Red Sea – Safaga. Cleansing and facial treatment creams in the Phytomer Homme product range are used to deliver a more specifically adapted solution for the treatment
-                    of the male epidermis resulting in a re-moisturized, rejuvenated, soothed, and oxygenated skin.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-10" class="services-content">
-                <h3>Extended Youth Facial – 90 minutes</h3>
-                <h4>Antioxidant</h4>
-                <p>At the high-end of scientific expertise and excellence in facial care, the “Extended Youth Facial” offers unique results paired with precious moments of total well-being. Thanks to three high-performing professional products and a unique
-                    procedure which optimizes the effectiveness of their ingredients, this treatment works in three phases: <br>
-                    <span>&#8226</span> Resurfaces the skin using a new generation exfoliation <br>
-                    <span>&#8226</span> Corrects and firms wrinkles using a particularly formulated massage wax <br>
-                    <span>&#8226</span> Restructures facial skin by combining the use of specifically concentrated ingredients with a high-tech smoothing and firming mask Finish the experience with a rich bath soak of scented salt s from the Red Sea -
-                    Safaga
-                </p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-11" class="services-content">
-                <h3>White Lumination Pioneer Facial – 90 minutes</h3>
-                <h4>Brightening</h4>
-                <p>Start up with a luxurious detoxification ritual using soak sea salts, then continue with a skin ritual cleansing along with chemical exfoliation in order to encourage a “new skin” effect. This is followed by a face massage carried out
-                    with the new Perfecting Massage Cream, an advanced professional product formulated to combine brightening action, dark spot correction, and action on wrinkles. The application of the new Luminous Complexion Mask, plasticizing with
-                    vitamin C delivers a final burst of radiance for a glowing face resulting in visibly brightened skin, more luminous complexion, and immediate burst of radiance.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-12" class="services-content">
-                <h3>Marine Breeze Facial – 60 minutes</h3>
-                <h4>Oxygenating</h4>
-                <p>A real breath of oxygen treatment that brings all the benefits of a seaside stroll into the treat ment room reducing shine and blemishes and restoring luminosity to the complexion. This relaxing treatment is ideal for combination, oily
-                    or clogged skin and is designed to oxygenate and purify bringing strong deep-cleansing and clarifying properties to the skin. The treatment ensures an excellent dilation of pores to promote the elimination of impurities.Products used
-                    contain ingredients which promote cellular respiration and remineralization.</p>
-                <button class="btn">Book Now</button>
-            </div>
-        </div>
-        <!-- ---- end of div tabs ----- -->
-    </section>
-
-
-    <section>
-        <div id="tabs4">
-            <img class="tab-img" src="/icons/massage-icon.png" alt="massage">
-            <h2 class="subtitle-accent treatments">Massage</h2>
-            <ul>
-                <li class="tab"><a href="#tabs-13">Hot stone</a></li>
-                <li class="tab"><a href="#tabs-14">Thai</a></li>
-                <li class="tab"><a href="#tabs-15">Reflexology</a></li>
-                <li class="tab"><a href="#tabs-16">Maternity</a></li>
-                <li class="tab"><a href="#tabs-17">Sports</a></li>
-                <li class="tab"><a href="#tabs-18">Stress Relief</a></li>
-                <li class="tab"><a href="#tabs-19">Relaxation</a></li>
-            </ul>
-
-            <div id="tabs-13" class="services-content">
-                <h3>Stone Massage – 60/90 minutes</h3>
-                <h4>Muscle Melt</h4>
-                <p>A deep-heat massage performed with warmed stones and rich aromatherapy oils relieving muscle tension and melting the stress away.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-14" class="services-content">
-                <h3>Thai Massage – 60/90 minutes</h3>
-                <h4>Asian Experience</h4>
-                <p>This oil-free healing therapy massage – which has been taught, practiced, and handed down through generations in Thailand for over 2,500 years – is based on a series of passive acupressure and stretching techniques using the therapist’s
-                    fingers, thumbs, elbows, arms, and feet allowing the body’s internal energy to flow freely and alleviating problematic conditions such as lower back pain, arthritis, headaches, and stress-related conditions improving flexibility and
-                    balancing the body’s energy system.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-15" class="services-content">
-                <h3>Reflexology Massage – 60/90 minutes</h3>
-                <h4>Balancing</h4>
-                <p>One of the world’s oldest healing methods. Reflexology is a unique massage technique applied to the feet and hands that is designed to bring the body into balance. A head, neck, and shoulders massage is also included.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-16" class="services-content">
-                <h3>Maternity Massage – 60 minutes</h3>
-                <h4>For Mothers-To-Be</h4>
-                <p>A pampering experience designed with the safety of the mother and child in mind. A customized approach which helps ease sore spots and improve mobility.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-17" class="services-content">
-                <h3>Sports Massage – 60/90 minutes</h3>
-                <h4>Muscle Recovery</h4>
-                <p>A massage combining deep tissue work with stretching, rocking, and circulation moving lactic acid out of the system. A mild soreness may result afterwards.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-18" class="services-content">
-                <h3>Stress Relief Massage – 60/90 minutes</h3>
-                <h4>Spa Signature</h4>
-                <p>This customized medium pressure massage experience is designed with the sole purpose of stress relief focusing on all of your main tension points: head, neck, shoulders, back, and feet.</p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-19" class="services-content">
-                <h3>Relaxation Massage – 60/90 minutes</h3>
-                <h4>Restful</h4>
-                <p>This tailored full-body Swedish massage uses long, smooth, and relaxing strokes to increase circulation and promote relaxation</p>
-                <button class="btn">Book Now</button>
-            </div>
-        </div>
-        <!-- ---- end of div tabs ----- -->
-    </section>
-
-
-    <section>
-        <div id="tabs5">
-            <img class="tab-img" src="/icons/aromatherapy-icon.png" alt="aromatheraphy">
-            <h2 class="subtitle-accent treatments">Couple's Treatments</h2>
-            <ul>
-                <li class="tab"><a href="#tabs-20">Heart Of Cairo</a></li>
-                <li class="tab"><a href="#tabs-21">Side-By-Side</a></li>
-            </ul>
-
-            <div id="tabs-20" class="services-content">
-                <h3>Heart Of Cairo – 120 minutes</h3>
-                <h4>Couple’s Retreat</h4>
-                <p>While you take in the magnificent views of the majestic river with your significant other, travel back in time to ancient Egypt with a two-hour experience of chamomile body scrub blended with jojoba, a healing bath with salts from the
-                    Red Sea – Safaga, a nourishing body mask, a relaxing scalp and facial massage, and a body massage performed with a blend of essential oils to soothe and refresh your skin. </p>
-                <button class="btn">Book Now</button>
-            </div>
-            <div id="tabs-21" class="services-content">
-                <h3>Side-By-Side Massage – 60/90 minutes</h3>
-                <h4>Time Together</h4>
-                <p>The perfect gift is spending time together. Enjoy a break from the pressures of everyday life with a side-by-side massage in a couple’s spa suite overlooking the majestic river and scenary. </p>
-                <button class="btn">Book Now</button>
-            </div>
-        </div>
-        <!-- ---- end of div tabs ----- -->
-    </section>
-
-
-
-    <section id="team" class="team">
-        <h1 class="section-title">Our Team</h1>
-        <div class="container">
-            <div class="card">
-                <div class="card-content">
-                    <div class="img-box">
-                        <img src="team/aletta.jpg" alt="Spa specialist">
-                    </div>
-                    <div class="content-box">
-                        <h3>Alleta Bookwitch<br><span> Spa Specialist</span></h3>
-                    </div>
+                <div class="intro-link">
+                    <a class="icon-2" href="#team">Our Team</a>
                 </div>
-                <ul class="social-icons">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <div class="intro-link">
+                    <a class="icon-3" href="#spagallery">Gallery</a>
+                </div>
+                <div class="intro-link">
+                    <a class="icon-4" href="#booknow">Book Now</a>
+                </div>
+        </section> <!--  END intro links-->
+   
+
+        <!--  About
+         =================================== -->
+        <section id="about" class="container about">
+            <h1 class="section-title">About Us</h1>
+            <p>Our wellness spa is acclaimed for our focus on finding innovative ways to help guests discover their own energy.
+            <p> Energy makes the difference between living and living well; recharging our energy allows us to flow rather than fight through life and that is why energy renewal is our mission....</p>
+            <a class="btn btn--primary" href="about.html">Read More</a>
+        </section> <!--  END of About Section -->
+
+
+        <!--  Services Card 1
+         =================================== -->
+        <section id="services" class="container col">
+            <h1 class="section-title">Our Services</h1>
+        
+            <div id="card-1" class="service-container">
+                <h2 class="service-title services-icon-1">Body Treatments</h2>
+                <ul class="unstyled-list service-ul">
+                    <li class="tab"><a href="#tab-1" class="btn">Combo</a></li>
+                    <li class="tab"><a href="#tab-2" class="btn">Slim and Sculpt</a></li>
+                    <li class="tab"><a href="#tab-3" class="btn">Private Ritual</a></li>
+                    <li class="tab"><a href="#tab-4" class="btn">Contouring</a></li>
+                    <li class="tab"><a href="#tab-5" class="btn">Exfoliation</a></li>
                 </ul>
-            </div>
+
+                <div id="tab-1" class="service-content">
+                    <h3>Body Scrub and Massage – 60 minutes</h3>
+                    <h4>Customized Combinations</h4>
+                    <p>An invigorating body polish with sandalwood, brown sugar, mandarin or ground coffee beans in addition to a 30-minute massage with blended essential oils.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>
+                </div>
+                <div id="tab-2" class="service-content">
+                    <h3>Essential Sculpting Body Care – 90 minutes</h3>
+                    <h4>Slimming & Sculpting</h4>
+                    <p>Refine the figure and smooth cellulite with this combo of fat-burning Thermo Reducing Clay and intensive targeted massages. Self-heating body mask is applied to the area between the waist and the knees followed by a sculpting massage using contouring products.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-3" class="service-content">
+                    <h3>Sea Holistic Body Treatment & Facial – 90 minutes</h3>
+                    <h4>Private Ritual</h4>
+                    <p>Ultra relaxing treatment with fragrant scent of Lavender. Thai-inspired body massage eliminates tension knots and restoring balance to the body. The treatment also offers an exfoliation using sea salt crystals and facial treatment. Finish up the experience by a rich bath soak of scented salts.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-4" class="service-content">
+                    <h3>Marine Body Contouring Wrap – 90 minutes</h3>
+                    <h4>Nourishment From The Sea</h4>
+                    <p>This treatment is based on a marine body wrap combined with a complete body massage eliminates toxins, break down fat and reinvigorates skin. Exfoliation using a marine sponge at the start stimulates the epidermis. The marine wrap is then applied to the whole body and is activated gently by micron foil. A total body massage at the end leaves you relaxed and rehydrated.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-5" class="service-content">
+                    <h3>Hammam Energy – 60 minutes</h3>
+                    <h4>Exfoliation</h4>
+                    <p>Experience the ancient art of a hammam bath where you will be given a cleansing exfoliation using castile soap sloughing off your dead skin cells. This is followed by a back, neck, and shoulder massage that will be personalized with your choice of aromatherapy blends.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+            </div> <!-- ---- end of service-container ----- -->
+        </section> <!--  END Services Card 1 -->
 
 
-            <div class="card">
+        <!--  Services Card 2
+         =================================== -->
+        <section id="services" class="container col">
+            <div id="card-2" class="service-container">
+                <h2 class="service-title services-icon-1">Baths</h2>
+                <ul class="unstyled-list service-ul">
+                    <li class="tab"><a href="#tab-6" class="btn">Hammam</a></li>
+                    <li class="tab"><a href="#tab-7" class="btn">Egypt Energy</a></li>
+                </ul>
+
+                <div id="tab-6" class="service-content">
+                    <h3>Hammam Heaven – 120 minutes</h3>
+                    <h4>Private Ritual</h4>
+                    <p>Steam bath ritual, known as hammam, performed in a private environment. In the warming room, you are enveloped in relaxing steam followed by skin cleansing with a traditional kese – exfoliating glove – improving circulation and removing dead cells. Finish up with a massage with the finest eucalyptus black soap and a warm rinse.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>
+                </div>
+                <div id="tab-7" class="service-content">
+                    <h3>Egypt Energy – 120 minutes</h3>
+                    <h4>Fit fo a Queen</h4>
+                    <p>Discover Cleopatra’s ancient Egyptian beauty secrets. First, you’ll be immersed in a rich bath of milk, honey, and salts from the Red Sea, then continue with aromatherapy oil massage designed to deepen your relaxation. Finish up the experience with a refreshing facial.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+            </div> <!-- ---- end of service-container ----- -->
+        </section> <!--  END Services Card 2  -->
+
+
+        <!--  Services Card 3
+         =================================== -->
+        <section id="services" class="container col">
+            <div id="card-3" class="service-container">
+                <h2 class="service-title services-icon-1">Facials</h2>
+                <ul class="unstyled-list service-ul">
+                    <li class="tab"><a href="#tab-8" class="btn">Youth Revealing</a></li>
+                    <li class="tab"><a href="#tab-9" class="btn">Just For Men</a></li>
+                    <li class="tab"><a href="#tab-10" class="btn">Extended Youth</a></li>
+                    <li class="tab"><a href="#tab-11" class="btn">White Lumination</a></li>
+                    <li class="tab"><a href="#tab-12" class="btn">Marine Breeze</a></li>
+                </ul>
+
+                <div id="tab-8" class="service-content">
+                    <h3>Youth Revealing Facial  – 90 minutes</h3>
+                    <h4>Cellular Renewal</h4>
+                    <p>A facial massage with an exceptional technique for instant visible results, with two masks and a unique resurfacing lotion. This treatment restores the skin's youthfulness, softness, and luminosity. Treatment will provide you with smoother, firmer, and more radiant skin.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>
+                </div>
+                <div id="tab-9" class="service-content">
+                    <h3>Skin Escape Facial - 90 minutes</h3>
+                    <h4>Just For Men Experience</h4>
+                    <p>Start up with a total body exfoliation using sandalwood salts. Cleansing and facial treatment creams are used to deliver a more specifically adapted solution for the male epidermis resulting in a re-moisturized, rejuvenated and oxygenated skin.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-10" class="service-content">
+                    <h3>Extended Youth Facial – 90 minutes</h3>
+                    <h4>Antioxidant</h4>
+                    <p>With professional products and unique antioxidant procedure, this treatment works in three phases:
+                        <br><br>
+                        <span>&#8226</span> Resurfaces the skin using a new generation exfoliation.
+                        <br><br>
+                        <span>&#8226</span> Corrects and firms wrinkles using massage a wax.
+                        <br><br>
+                        <span>&#8226</span>Restructures facial skin with combo of concentrated ingredients with a smoothing and firming mask, finished with a bath of scented salts.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-11" class="service-content">
+                    <h3>White Lumination Pioneer Facial – 90 minutes</h3>
+                    <h4>Brightening</h4>
+                    <p>Luxurious detoxification using sea salts, then a skin cleansing with chemical exfoliation, followed by a face massage with the Luminous Complexion Mask with vitamin C delivers burst of radiance for a glowing face and visibly brightened skin, more luminous complexion.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-12" class="service-content">
+                    <h3>Marine Breeze Facial – 60 minutes</h3>
+                    <h4>Oxygenating</h4>
+                    <p>Oxygen treatment that reduces shine and blemishes and restores luminosity to the complexion. This relaxing treatment is ideal for combination, oily or clogged skin. Excellent dilation of pores to promote the elimination of impurities and products which promote cellular respiration and remineralization.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+            </div> <!-- ---- end of service-container ----- -->
+        </section> <!--  END Services Card 3 -->
+
+
+        <!--  Services Card 4
+         =================================== -->
+        <section id="services" class="container col">
+            <div id="card-4" class="service-container">
+                <h2 class="service-title services-icon-1">Massage</h2>
+                <ul class="unstyled-list service-ul">
+                    <li class="tab"><a href="#tab-13" class="btn">Hot Stone</a></li>
+                    <li class="tab"><a href="#tab-14" class="btn">Thai</a></li>
+                    <li class="tab"><a href="#tab-15" class="btn">Reflexology</a></li>
+                    <li class="tab"><a href="#tab-16" class="btn">Maternity</a></li>
+                    <li class="tab"><a href="#tab-17" class="btn">Sports</a></li>
+                    <li class="tab"><a href="#tab-18" class="btn">Stress Relief</a></li>
+                    <li class="tab"><a href="#tab-19" class="btn">Relaxation</a></li>
+                </ul>
+
+                <div id="tab-13" class="service-content">
+                    <h3>Stone Massage – 60/90 minutes</h3>
+                    <h4>Muscle Melt</h4>
+                    <p>A deep-heat massage performed with warmed stones and rich aromatherapy oils relieving muscle tension and melting the stress away.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>
+                </div>
+                <div id="tab-14" class="service-content">
+                    <h3>Thai Massage – 60/90 minutes</h3>
+                    <h4>Asian Experience</h4>
+                    <p>Oil-free therapy massage is based on acupressure and stretching techniques using the therapist’s fingers, thumbs, elbows, arms, and feet alleviating problematic conditions such as lower back pain, arthritis, headaches, and stress-related conditions improving flexibility and balance.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-15" class="service-content">
+                    <h3>Reflexology Massage – 60/90 minutes</h3>
+                    <h4>Balancing</h4>
+                    <p>Reflexology is a unique massage technique applied to the feet and hands that is designed to bring the body into balance. A head, neck, and shoulders massage is also included.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-16" class="service-content">
+                    <h3>Maternity Massage – 60 minutes</h3>
+                    <h4>For Mothers-To-Be</h4>
+                    <p>A pampering experience designed with the safety of the mother and child in mind. A customized approach which helps ease sore spots and improve mobility.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-17" class="service-content">
+                    <h3>Sports Massage – 60/90 minutes</h3>
+                    <h4>Muscle Recovery</h4>
+                    <p>A massage combining deep tissue work with stretching, rocking, and circulation, moving lactic acid out of the system. A mild soreness may result afterwards.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-18" class="service-content">
+                    <h3>Stress Relief Massage – 60/90 minutes</h3>
+                    <h4>Spa Signature</h4>
+                    <p>This customized medium pressure massage experience is designed with the purpose of stress relief focusing on all of your main tension points: head, neck, shoulders, back, and feet.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+                <div id="tab-19" class="service-content">
+                    <h3>Relaxation Massage – 60/90 minutes</h3>
+                    <h4>Restful</h4>
+                    <p>This tailored full-body Swedish massage uses long, smooth, and relaxing strokes to increase circulation and promote relaxation.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+            </div> <!-- ---- end of service-container ----- -->
+        </section> <!--  END Services Card 4 -->
+
+
+        <!--  Services Card 5
+            =================================== -->
+        <section id="services" class="container col">
+            <div id="card-5" class="service-container">
+                <h2 class="service-title services-icon-1">Couple's Treatments</h2>
+                <ul class="unstyled-list service-ul">
+                    <li class="tab"><a href="#tab-20" class="btn">Heart Of Cairo</a></li>
+                        <li class="tab"><a href="#tab-21" class="btn">Side-By-Side</a></li>
+                    </ul>
+        
+                <div id="tab-20" class="service-content">
+                    <h3>Heart Of Cairo – 120 minutes</h3>
+                    <h4>Couple’s Retreat</h4>
+                    <p>Travel back in time to ancient Egypt with a two hour experience of chamomile body scrub blended with jojoba, a healing bath with salts from the Red Sea, a nourishing body mask, a relaxing scalp and facial massage, and a body massage with a blend of essential oils.</p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>
+                </div>
+                <div id="tab-21" class="service-content">
+                    <h3>Side-By-Side Massage – 60/90 minutes</h3>
+                    <h4>Time Together</h4>
+                    <p>The perfect gift is spending time together. Enjoy a break from the pressures of life with a side-by-side massage in a couple’s spa suite overlooking the majestic river and scenery. </p>
+                    <a href="#booknow" class="btn btn--secondary">Book Now</a>            
+                </div>
+            </div> <!-- ---- end of service-container ----- -->
+        </section> <!--  END Services Card 5 -->
+       
+    
+
+
+        <!--  Team
+         =================================== -->
+        <section id="team" class="container col team">
+            <h1 class="section-title">Our Team</h1>
+            
+            <div class="service-container card">
                 <div class="card-content">
                     <div class="img-box">
-                        <img src="team/tia.jpg" alt="reflexologist">
+                        <img src="/img-team/tia.jpg" alt="reflexologist">
                     </div>
                     <div class="content-box">
                         <h3>Tea Rose<br><span>Reflexologist</span></h3>
                     </div>
-                </div>
-                <ul class="social-icons">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="card">
+                    <div class="social-icons unstyled-list">
+                        <a href="#" class="icon-3" style="--i:1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon-1" style="--i:2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon-2" style="--i:3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div> <!-- ---- end of card-content ----- -->
+            </div> <!-- ---- end of service-container, card----- -->
+
+            <div class="service-container card">
                 <div class="card-content">
                     <div class="img-box">
-                        <img src="team/noah.jpg" alt="IT support">
+                        <img src="img-team/noah.jpg" alt="IT support">
                     </div>
                     <div class="content-box">
                         <h3>Noah Bluish<br><span>IT Support</span></h3>
                     </div>
-                </div>
-                <ul class="social-icons">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="card">
+                    
+                    <div class="social-icons unstyled-list">
+                        <a href="#" class="icon-3" style="--i:1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon-1" style="--i:2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon-2" style="--i:3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div> <!-- ---- end of card-content ----- -->
+            </div> <!-- ---- end of service-container, card----- -->
+
+
+            <div class="service-container card">
                 <div class="card-content">
                     <div class="img-box">
-                        <img src="team/christina.jpg" alt="Spa Specialist">
+                        <img src="img-team/christina.jpg" alt="Spa Specialist">
                     </div>
                     <div class="content-box">
                         <h3>Chrissy Parsley<br><span>Spa Specialist</span></h3>
                     </div>
-                </div>
-                <ul class="social-icons">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="card">
+                
+                    <div class="social-icons unstyled-list">
+                        <a href="#" class="icon-3" style="--i:1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon-1" style="--i:2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon-2" style="--i:3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div> <!-- ---- end of card-content ----- -->
+            </div> <!-- ---- end of service-container, card----- -->
+
+
+            <div class="service-container card">
                 <div class="card-content">
                     <div class="img-box">
-                        <img src="team/james.jpg" alt="Nutritionist">
+                        <img src="img-team/james.jpg" alt="Nutritionist">
                     </div>
                     <div class="content-box">
                         <h3>James Howlett<br><span>Nutritionist</span></h3>
                     </div>
-                </div>
-                <ul class="social-icons">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="card">
+
+                    <div class="social-icons unstyled-list">
+                        <a href="#" class="icon-3" style="--i:1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon-1" style="--i:2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon-2" style="--i:3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div> <!-- ---- end of card-content ----- -->
+            </div> <!-- ---- end of service-container, card----- -->
+
+
+            <div class="service-container card">
                 <div class="card-content">
                     <div class="img-box">
-                        <img src="team/joanna.jpg" alt="Owner">
+                        <img src="img-team/joanna.jpg" alt="Owner">
                     </div>
                     <div class="content-box">
                         <h3>Joanna Firwitch<br><span>Owner</span></h3>
                     </div>
+
+                    <div class="social-icons unstyled-list">
+                        <a href="#" class="icon-3" style="--i:1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon-1" style="--i:2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon-2" style="--i:3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div> <!-- ---- end of card-content ----- -->
+            </div> <!-- ---- end of service-container, card----- -->
+
+        </section> <!--  END Team Section -->
+
+
+        <section id="spagallery" class="container">
+            <h1 id="gallery" class="section-title">Gallery</h1>
+            <div class="container grid-3-col">
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Bath" href="img/1.jpg"><img src="img/1.jpg"></a>
                 </div>
-                <ul class="social-icons">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Facial" href="img/2.jpg"><img src="img/2.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Bath" href="img/3.jpg"><img src="img/3.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Facial" href="img/4.jpg"><img src="img/4.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Massage" href="img/5.jpg"><img src="img/5.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Face mask" href="img/6.jpg"><img src="img/6.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Massage" href="img/7.jpg"><img src="img/7.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Massage" href="img/8.jpg"><img src="img/8.jpg"></a>
+                </div>
+                <div class="image-box">
+                    <a data-fancybox="gallery" data-caption="Reflexology" href="img/9.jpg"><img src="img/9.jpg"></a>
+                </div>               
+            </div>
+            <div class="btn--gallery">
+                <a class="btn btn--primary" href="gallery.html">View All</a> 
+            </div>
+        </section>
+        
+        
+        
+        <section id="booknow" class="container col">
+            <h1 class="section-title">Book Now</h1>
+            
+            <div class="service-container card--booking">
+
+                    <form action="https://formspree.io/f/xknygbpk" method="post" id="form" class="form">
+                        <div class="form-field">
+                            <input type="text" name="name" autocomplete="off" required>
+                            <label for="name" class="label-name"><span class="content-name">Full name</span></label>
+                        </div>
+        
+                        <div class="form-field">
+                            <input type="email" name="email" id="email" autocomplete="off" required>
+                            <label for="email"class="label-name"><span class="content-name">Email</span></label>
+                        </div>
+        
+                        <div class="form-field">
+                            <input type="text" id="datepicker" required>
+                            <label for="date" class="label-name"><span class="content-name">Date</span></label>
+                        </div>
+                        
+                        <div class="form-field">
+                            <select name="select" id="#" required>
+                            <option selected disabled></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">3+</option>
+                            </select>
+                            <label for="select" class="label-name"><span class="content-name">How many people?</span></label>
+                        </div>
+        
+                        <div class="form-field">
+                            <textarea name="message" id="message" cols="1" rows="2" required></textarea>
+                            <label for="message" class="label-name"><span class="content-name">Message</span></label>
+                        </div>
+        
+                        <div class="buttonContainer">
+                            <input class="btn btn--secondary btn--booking" type="submit" value="Book Now">
+                        </div>
+                    </form>
+                </div> 
+                
+            </div>
+        </section> <!--  END Book now Section -->
+
+
+        <!--  Footer
+         =================================== -->
+
+        <footer class="grid">
+                <div class="social-links-footer">
+                <ul class="unstyled-list">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="spagallery" class="gallery">
-        <h1 class="section-title">Gallery</h1>
-        <div class="container">
-            <div class="image-box">
-                <a data-fancybox="gallery" data-caption="First image" href="images/1.jpg"><img src="images/1.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/10.jpg"><img src="images/10.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/15.jpg"><img src="images/15.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/17.jpg"><img src="images/17.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/2.jpg"><img src="images/2.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/22.jpg"><img src="images/22.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/3.jpg"><img src="images/3.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/30.jpg"><img src="images/30.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/40.jpg"><img src="images/40.jpg"></a>
-            </div>
-            <div class="image-box">
-                <a data-fancybox="gallery" href="images/5.jpg"><img src="images/5.jpg"></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="booknow" class="booknow">
-        <h1 class="section-title">Book Now</h1>
-    </section>
-
-    <footer>
-
-        <div class="footer-3col">
-            <div class="col col-1">
-                <ul class="mainMenu footer-menu">
-                    <li>
-                        <a class="change" href="#about">About Us</a>
-                    </li>
-                    <li><a class="change" href="#services">Our services</a></li>
-                    <li><a class="change" href="#team">Our team</a></li>
-                </ul>
-                <br>
-            </div>
-            <div class="col col-2">
-                <ul class="sci">
-                    <li style="--i:1"><a href="#"><i class="fab fa-facebook"></i></a></li> <br>
-                    <li style="--i:2"><a href="#"><i class="fab fa-twitter"></i></a></li> <br>
-                    <li style="--i:3"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="col col-3">
-                <img class="logo" src="/icons/mendala-logo-intro.png" alt="">
-            </div>
-            <div class="col col-4">
-                <p>2021 Street, Europe 95673 +385 345 678 903 wellnessspa@gmail.com
-                    <br> <br> © Wellness Spa 2021</p>
-            </div>
-
-
+                </div>
+                <div class="social-links-footer">
+                    <div>
+                        <a href="index.html">
+                        <div class="logo"><img src="icons/mendala-logo.svg" alt="logo"></div>
+                        </a>
+                    </div>
+                    <div>
+                    <a href="" class="icon-1"><i class="fab fa-twitter-square"></i></a>
+                    <a href="" class="icon-2"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="icon-3"><i class="fab fa-facebook-square"></i></a></i>
+                    </div>
+                </div>
+                
+                <div class="social-links-footer">
+                    <p>2021 Street, Europe 95673 +385 345 678 903 wellnessspa@gmail.com <br>© Wellness Spa 2021 </p>
+                </div> 
     </footer>
 
 
     <!-- NAV JS -->
+        <!-- My own scripts -->
     <script src="js/app.js"></script>
 
     <!-- FANCYBOX -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        $("#form").validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+
+            }
+        });
+    </script>
+
+    <script>
+        $( "#datepicker" ).datepicker({
+            altField: "#actualDate",
+            beforeShowDay: $.datepicker.noWeekends,
+            minDate: '0'
+    });
+    </script>
+
+</script>
 </body>
 
 </html>

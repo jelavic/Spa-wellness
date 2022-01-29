@@ -1,0 +1,69 @@
+.intro-text {
+  margin: 5rem auto;
+}
+
+.intro-links {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  .intro-link {
+    padding: 1.5em;
+    margin: 0 auto;
+    
+    a {
+        letter-spacing: 0.1rem;
+        color: $dark;
+      
+
+      &:hover,
+      &:focus {
+        color: $hover-primary;
+      }
+    }
+
+    .icon-1::before {
+      content: '';
+      background: url(../../icons/spa.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      height: 80px;
+      width: 80px;
+    }
+    .icon-2::before {
+      content: '';
+      background: url(../../icons/person.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      height: 80px;
+      width: 80px;
+    }
+    .icon-3::before {
+      content: '';
+      background: url(../../icons/gallery.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      height: 80px;
+      width: 80px;
+    }
+    .icon-4::before {
+      content: '';
+      background: url(../../icons/calendar.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      height: 80px;
+      width: 80px;
+    }
+  }
+}

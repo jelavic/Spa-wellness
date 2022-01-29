@@ -1,0 +1,60 @@
+#services {
+  margin: 5rem auto;
+  position: relative;
+
+
+    .service-ul {
+      background-color: unset;
+      border: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+
+      li {
+        min-width: 180px;
+        display: flex;
+        justify-content: center;
+        margin: 0.4rem;
+        border-radius: 0.5em;
+        box-shadow: $box-shadow-light;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border: none;
+         
+          background-color: $hover-accent-10 !important;
+          box-shadow: $box-shadow, $box-shadow;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+          border: none;
+          background: none;
+        }
+      }
+    }
+
+    .services-icon-1::before {
+      content: '';
+      background: url(../../icons/lotus-icon.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      height: 50px;
+      width: 50px;
+      margin: 0 auto;
+    }
+    .service-content {
+      box-shadow: $box-shadow;
+      padding: 10%;
+      margin: 5%;
+    }
+  }
+
+
+
+

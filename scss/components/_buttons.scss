@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.5em;
+  transition: all linear 200ms;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.btn--primary {
+  background: $primary;
+  color: $text-inverse;
+  font-weight: $font-bolder;
+  border: 2px solid $primary;
+
+  &:hover,
+  &:focus {
+    background: $hover-primary;
+    border-color: $hover-primary;
+    color: $text-inverse;
+  }
+}
+.btn--secondary {
+  background: $accent;
+  color: $dark;
+  font-weight: $font-bolder;
+  border: 2px solid $accent;
+
+  &:hover,
+  &:focus {
+    background: $hover-accent-20;
+    border-color: $hover-accent-20;
+    color: $text-inverse;
+  }
+}
+
+.btn--gallery{
+  margin-top: 1.5rem;
+}

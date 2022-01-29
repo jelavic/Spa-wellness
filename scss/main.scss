@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200;300;400;500;600;700;800&display=swap');
+// 1. Config files and helpers
+@import 'abstracts/colors';
+@import 'abstracts/type';
+
+// // 2. Vendor
+@import 'vendor/normalize';
+@import 'vendor/grid';
+
+// // 3. Base styles
+@import 'base/base';
+@import 'base/typography';
+
+// // 4. Layout
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/intro';
+@import 'layout/about';
+@import 'layout/services';
+@import 'layout/team';
+@import 'layout/booking';
+@import 'layout/footer';
+
+// // 5. Components
+
+@import 'components/buttons';
