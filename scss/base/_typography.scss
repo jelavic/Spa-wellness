@@ -83,11 +83,16 @@ p {
     padding: 10%;
     padding-bottom: 0;
   
-   
 
-    @media (min-width: 650px){
-     padding-top: 20%;
+    @media (min-width: 800px){
+      margin-top: 8rem;
+     }
+
+    @media (min-width: 1290px){
+     margin-top: 0rem;
     }
+    
+  
   }
 
   

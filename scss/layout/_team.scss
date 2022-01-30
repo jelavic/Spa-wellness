@@ -7,6 +7,11 @@
     backdrop-filter: blur(10px) saturate(170%);
     opacity: 0.6;
     transition: 0.5s;
+
+  @media (min-width: 650px) {
+    width: 50%;
+    
+  }
 }
 
 .card:hover {

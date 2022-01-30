@@ -663,9 +663,15 @@ p {
   padding-bottom: 0;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 800px) {
   .hero-text h2 {
-    padding-top: 20%;
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 1290px) {
+  .hero-text h2 {
+    margin-top: 0rem;
   }
 }
 
@@ -1206,6 +1212,12 @@ p {
   opacity: 0.6;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (min-width: 650px) {
+  .card {
+    width: 50%;
+  }
 }
 
 .card:hover {
