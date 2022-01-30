@@ -75,12 +75,22 @@ p {
 }
 
 .hero-text {
+ 
   h2 {
     font-size: 2rem;
     font-weight: $font-bolder;
     line-height: 1.5;
-    padding: 1em 1em 0 1em;
+    padding: 10%;
+    padding-bottom: 0;
+  
+   
+
+    @media (min-width: 650px){
+     padding-top: 20%;
+    }
   }
+
+  
 }
 
 .intro-text {
