@@ -1,7 +1,7 @@
 footer{
     background-color: $transparent-dark;
     padding: 1em;
-    gap: 1.5em;
+    gap: 1em;
  
 
 
@@ -22,6 +22,21 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        
+
+        a{
+            padding: .8em;
+        }
+
+        i{
+            font-size: 1rem;
+        }
+
+        
+        a:hover{
+            color: $hover-accent-10;
+            opacity: 1;
+        }
     }
     
 }

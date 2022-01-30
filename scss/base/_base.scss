@@ -29,6 +29,7 @@ img {
     box-shadow: $box-shadow;
     opacity: 0.6;
     transition: all ease-in-out 0.5s;
+   
 
     &:hover, &:focus{
       opacity: 1;
@@ -63,7 +64,8 @@ a {
 }
 
 .social-links,
-.social-icons {
+.social-icons,
+.social-links-footer {
 .icon-1:hover {
   color: rgb(86, 154, 243);
 }
@@ -79,4 +81,8 @@ a {
   width: 40px;
   max-width: 60px;
   padding: 0;
+}
+
+.about--page{
+  margin-bottom: 10em;
 }
